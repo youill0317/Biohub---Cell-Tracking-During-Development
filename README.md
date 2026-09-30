@@ -9,12 +9,13 @@
 | 노트북 | 제출 ID | Kaggle 커널 | Public | Private |
 |---|---|---|---|---|
 | `notebooks/x138-steal-prot10-sm05-fastcommit-v1.ipynb` | 56631035 | youill0317/x138-steal-prot10-sm05-fastcommit-v1 v1 | 0.957 | 0.917 |
-| `notebooks/x138-prot10-fastcommit-v1.ipynb` | 56540178 | youill0317/x138-prot10-fastcommit-v1 v1 | 0.954 | 0.917 |
+| `notebooks/x138-d30-steal-prot10-sm05-fastcommit-v1.ipynb` | 56680070 | youill0317/x138-d30-steal-prot10-sm05-fastcommit-v1 v1 | 0.957 | 0.915 |
 
 - 노트북: Kaggle 제출 버전 원본(출력 없음)
 - 기반 노트북: [anvithpothula/biohub-x138](https://www.kaggle.com/code/anvithpothula/biohub-x138) (Public 0.953 / Private 0.917로 재제출 확인)
 - 변경(공통): protection10 — flow relink 전 고신뢰 단일 ILP 링크 보존
-- 변경(56631035 추가): safe-division steal — 이미 다른 부모가 가진 딸 노드 탈취 허용, 탈취 여유 1.0 → 0.5 µm (`BIOHUB_SAFE_DIV_ALLOW_STEAL=1`, `BIOHUB_SAFE_DIV_STEAL_MARGIN_UM=0.5`)
+- 변경(공통): safe-division steal — 이미 다른 부모가 가진 딸 노드 탈취 허용, 탈취 여유 1.0 → 0.5 µm (`BIOHUB_SAFE_DIV_ALLOW_STEAL=1`, `BIOHUB_SAFE_DIV_STEAL_MARGIN_UM=0.5`)
+- 변경(56680070만): safe-division 딸 분기 거리 2.25 → 3.0 µm (`BIOHUB_SAFE_DIV_DIVERGE_UM=3.0`)
 - fast commit: visible test(공개 영상 4개) 커밋 실행은 placeholder `submission.csv`만 기록, 제출 재실행 시 hidden test 전체 추론
 
 ## 실행
